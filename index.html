@@ -33,10 +33,17 @@
             <tbody>
                 <tr v-for='item in rateList'>
                     <td>
-                        <p v-for='country in countryList'>
+                        <!-- <p v-for='country in countryList'>
                             <span v-if='item.cc === country.currencies[0].code'>
                                 <img style='width:42px'  :src='country.flag' alt="flag" class="mx-2">
                                 {{country.name}} 
+                            </span>
+                        </p> -->
+
+                        <p v-for='count in item.Country'>
+                            <span >
+                                <img style='width:42px'  :src='count.flag' alt="flag" class="mx-2">
+                                {{count.name}} 
                             </span>
                         </p>
                     </td>
